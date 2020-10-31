@@ -1,0 +1,45 @@
+body{
+    background-color: darkslateblue;
+
+}
+#all {
+    margin: auto;
+    width: fit-content;
+}
+.monospace {
+    font-family: "Lucida Console", Courier, monospace;
+  }
+h1 {
+    margin: 23px;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+  #set {
+    margin: auto;
+    width: fit-content;
+    left: -19px;
+    position: relative;
+}
+
+#contactSlip {
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(24, 112, 184);
+    width: fit-content;
+    min-width: 300px;
+    border-bottom: 2px solid black;
+    border-radius: 2%;
+}
+
+#ph {
+    padding-right: 10px;
+    text-align: end;
+    right: 0;
+    position: absolute;
+}
+
+#formm {
+    margin: 23px;
+}
