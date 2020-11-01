@@ -31,10 +31,21 @@ app.get('/', function (req, res) {
     });
 });
 
+app.get('/delete_contact/',function(req,res){
+    let phone=req.query.phone;
+    //console.log(req.query);
+   let indexCount =cl.findIndex(num => num.phone==phone);
+    if(indexCount != -1){
+        cl.splice(indexCount, 1);
+    }
+
+    return res.redirect('back');
+});
+
 app.post('/createContact',function(req,res){
     cl.push(req.body);
     res.redirect('/');
-})
+});
 
 
 app.listen(port, function (err) {

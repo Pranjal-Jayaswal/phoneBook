@@ -2,20 +2,25 @@
 
 <head>
     <title><%=title%></title>
+    <script src="https://kit.fontawesome.com/52f6d7bc9d.js" crossorigin="anonymous"></script> 
+       <link rel="stylesheet" href="/cssFiles/indexstyle.css">
 
 </head>
-<link rel="stylesheet" href="/cssFiles/indexstyle.css">
 
 <body>
     <div id="all">
-        <h1>Contact List</h1>
+
+
+        <h1><i class="fas fa-address-book"></i> &nbsp; Contact List</h1>
+
         <div id="content">
             <ul id="set">
                 <% for(let i of c_l){
                 %>
                 <li id="contactSlip">
                     <span class="monospace"><%=i.name%> </span>
-                    <span id="ph"><%=i.phone%></span>
+                    <span id="ph"><%=i.phone%> &nbsp;
+                        <a href="/delete_contact/?phone=<%= i.phone%>"><i class="fas fa-window-close"></i></a></span>
                 </li>
 
                 <%
