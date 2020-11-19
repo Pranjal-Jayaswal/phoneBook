@@ -13,20 +13,20 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded());
 app.use(express.static('myassets'));
-let cl = [
-    {
-        name: 'Pranjal',
-        phone: '8340792564',
-    },
-    {
-        name: 'John',
-        phone: '123456789',
-    },
-    {
-        name: 'Rockefeller',
-        phone: '987654321',
-    }
-];
+// let cl = [
+//     {
+//         name: 'Pranjal',
+//         phone: '8340792564',
+//     },
+//     {
+//         name: 'John',
+//         phone: '123456789',
+//     },
+//     {
+//         name: 'Rockefeller',
+//         phone: '987654321',
+//     }
+// ];
 
 app.get('/', function (req, res) {
    Contact.find({},function(err,contacts){
